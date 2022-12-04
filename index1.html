@@ -14,16 +14,17 @@
 <body>
    
     <div id="header">
-        <div class="container">
+        <div>
             <nav>
                 <h1 class="logo"><span style="color:#ff004f">F</span>ARHEEN</h1>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
                     <li><a href="#github">Github</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://drive.google.com/file/d/1pVOk6hTq40SjUj3PsKqeJZvFwnL-t4nj/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a id="res1" href="images1/Farheen-Resume.pdf" download>Resume <i class="fa-solid fa-download"></i></a></li>
                     <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -34,17 +35,18 @@
                 <div id="type_div">
                 <h1>Hi, I'm <span class="typing">Farheen</span><br> From India</h1>
             </div>
-                <a href="images1/Farheen-Resume.pdf" class="btn" download >My Resume</a>
+                <a id="res2" href="images1/Farheen-Resume.pdf" class="btn" download >Resume</a>
             </div>
             
             </div>
         </div>
     </div>
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images1/newestimage.PNG" >
+                    <img src="images/newestimage.PNG" >
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -57,16 +59,12 @@
                           skilled at executing initiatives with a defined goal. I'm really
                            interested in working as a software developer to enhance the user
                             experience.
-
-                    </p>
-
                          <div class="details">
-                            <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p>
-                            <p class="skill-ed" onclick="opentab('Skills')">Skills</p>
+                            <!-- <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p> -->
+                            <p class="skill-ed active" onclick="opentab('Skills')">Soft Skills</p>
                             <p class="skill-ed" onclick="opentab('Education')">Education</p>
-                            <p class="skill-ed" onclick="opentab('Traning')">Certification And Training</p>
                          </div>
-                        <div class="contents active-tab" id="Technical">
+                        <!-- <div class="contents active-tab" id="Technical">
                             <ul>
                                 <li><i class="fa-brands fa-java"></i><span>Java</span> </li>
                                 <li><i class="fa-brands fa-hire-a-helper"></i><span>Hibernate</span> </li>
@@ -74,8 +72,8 @@
                                 <li><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
                                 <li><i class="fa-brands fa-html5"></i><span>Html/Css</span></li>
                             </ul>
-                        </div>
-                        <div class="contents" id="Skills">
+                        </div> -->
+                        <div class="contents active-tab" id="Skills">
                             <ul>
                                 <li><span> Proactive </span></li>
                                 <li><span>Problem Solving</span></li>
@@ -102,10 +100,17 @@
             </div>
         </div>
     </div>
+      <div id="Skills" class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div id="skill_container" >
+            
+        </div>
+
+      </div>
 
     <div class="container git" id="github">
         <h1 class="sub-title">GitHub Calendar</h1>
-        <img src="images1/stats.png" id="exp">
+        <img src="images/stats.png" id="exp">
         
     <div class="calendar">
         <!-- Loading stuff -->
@@ -117,21 +122,43 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="project-list">
                 <div class="work">
-                    <img src="images1/Project_1.PNG">
+                    <div id="project_Image">
+                    <img src="images/STSKart.png">
+                </div>
                     <div class="layer">
-                        <h3>Indian Express-Clone</h3>
-                        <p> Tech Stack- HTML , CSS , JAVASCRIPT , NEWS API,YOTUBE API.<br> Provide News of all over the world</p>
+                        <h2>Online Crime File Management</h2>
+
+                        <p>It is a console-based application. This software provides a facility for reporting online crimes, complaints, and missing persons, showing the most wanted person details Any Number of clients can connect to the server. Each user first makes their login to sever to show their availability. I use jar files to enable the JDBC facilities. </p>
+
+                        <p> Tech Stack | java | JDBC | MySQL |</p>
                         <div>
-                        <a href="https://github.com/ankit2341/dramatic-reason-5304" target="_blank">Github</a>
+                        <a href="https://github.com/Farheen-cell/ultra-magic-8688" target="_blank">Github</a>
+                        <a href="https://github.com/Farheen-cell/ultra-magic-8688" target="_blank">Live</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div id="project_Image">
+                    <img src="images/Project_1.PNG">
+                </div>
+                    <div class="layer">
+                        <h2>Indian Express-Clone</h2>
+
+                        <p>A news website where you can watch and read live news and about world affairs.Provides you news from all over the world.</p>
+
+                        <p> Tech Stack | HTML | CSS | JavaScript | News Api | YouTube Api</p>
+                        <div>
+                        <a href="https://github.com/Bhatteryash/dramatic-reason-5304" target="_blank">Github</a>
                         <a href="https://dramatic-reason-5304.netlify.app/" target="_blank">Live</a>
                     </div>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images1/balavita.png">
+                    <img src="images/balavita.PNG">
                     <div class="layer">
-                        <h3>Balavita-Clone</h3>
-                        <p> Tech Stack- HTML , CSS , JAVASCRIPT<br> Shop whatever you want</p>
+                        <h2>Balavita-Clone</h2>
+                        <p>Ecommerce website for online shopping with Full functionality flow i.e SignUp, SighIn, Cart, Payment Checkout</p>
+                        <p> Tech Stack | HTML | CSS | JavaScript</p>
                         <div>
                             <a href="https://github.com/sujeetcoder/bellavitaproject1" target="_blank">Github</a>
                             <a href="https://enchanting-bubblegum-e67cc4.netlify.app/" target="_blank">Live</a>
@@ -139,11 +166,12 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images1/Project_2.png">
+                    <img src="images/Project_2.PNG">
                     <div class="layer">
-                        <h3>SkinStore-Clone</h3>
-                        <p> Tech Stack- HTML , CSS , JAVASCRIPT,API<br> Shoping of Sking Related Products</p>
-                        <div>
+                        <h2>SkinStore-Clone</h2>
+                        <p>Ecommerce website for online shopping with Full functionality flow i.e SignUp, SighIn, Cart, Payment Checkout</p>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT,API </p>
+                        <div id="git_live">
                         <a href="https://github.com/Farheen-cell/rhetorical-division-3531" target="_blank">Github</a>
                         <a href="https://startling-crumble-7db358.netlify.app/" target="_blank">Live</a>
                     </div>
@@ -160,7 +188,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> Farheen.ali108@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> +91-9643570341</p>
+                    <p><a href=""> <i class="fa-solid fa-square-phone"></i> +91-9643570341</a></p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/farheen-ali-802898233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Farheen-cell" target="_blank"><i class="fa-brands fa-github"></i></a>

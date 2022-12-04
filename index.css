@@ -15,24 +15,30 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210115/pngtree-digital-backend-banner-technology-concept-particle-background-design-image_520150.jpg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAHf_q6dYXKXE_krF0BLaDmH74SGTPf4MHA&usqp=CAU);
     background-size: cover;
     background-position:center;
-   
 }
-
-
 .container{
+    width: 100%;
     padding: 10px 10%;
-    
-
 }
 nav{
-    margin-top: 2%;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   padding: 5px 10%;
+}
+
+nav.sticky{
+    position: fixed;
+    top: 0px;
+    background-color: #17014e;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.6s;
+    z-index: 1;
 }
 .logo{
     font-size: 41px;
@@ -103,7 +109,7 @@ nav ul li a:hover::after{
 #about{
 padding:60px 0px;
 color: #ababab;
-background-color: #020638;
+background-color: #17014e;
 }
 .row{
     display: flex;
@@ -115,7 +121,6 @@ background-color: #020638;
 }
 .about-col-1 img{
     width:100%;
-    height: 420px;
     border-radius: 15px;
 }
 
@@ -178,6 +183,54 @@ font-size: 20px;
     display:block ;
 }
 
+/* Skills */
+
+#Skills{
+    width: 100%;
+background-color: #17014e;
+}
+
+#skill_container{
+   width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    
+    /* border: 1px solid red; */
+}
+#skill_container div{
+    height: 100%;
+    /* width: 100%; */
+    /* border: 1px solid pink; */
+   /* padding: 10px; */
+   text-align: center;
+   background-color: #17014e;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px;
+   
+}
+#skill_container div:hover{
+    
+transform: scale(1.1);
+    border: 2px solid white;
+}
+#skill_container div h2{
+    /* width: 100%; */
+    margin-top: 20px;
+}
+#skill_container img{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
 /* Experience */
 
 #exp{
@@ -191,48 +244,42 @@ font-size: 20px;
 
 #portfolio{
     padding: 50px 0px;
-    background-color: #020638;
+    background-color: #17014e;
 
 }
 .project-list{
     width:100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 40px;
-    margin: auto;
     margin-top: 50px;
 
 }
 .work{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+    border: 2px solid #b54769;
+    background-color: #17014e;
+    padding: 20px;
+  
 }
+.work:hover{
+transform: scale(1.05);
+}
+
 .work img{
     width: 100%;
+height: 100%;
     border-radius: 10px;
-    display: block;
-    transition: transform(0.5s);
 }
 .layer{
     width: 100%;
-    height: 0;
-    background: linear-gradient(#020638,#ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+   text-align: center;
+   padding: 10px;
 }
-.layer h3{
+.layer p{
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -247,16 +294,17 @@ font-size: 20px;
 }
 .layer a:hover{
     background-color: #ff004f;
-    color: white;
+    color: #fff;
 }
-.work:hover img{
-transform: scale(1.1);
+.layer h2{
+margin: 20px auto;
 }
-.work:hover .layer{
-    height: 100%;
-}
+
+/* Contact  */
+
+
 #contact{
-    background-color: #020638;
+    background-color: #17014e;
 }
 
 .contact-left{
@@ -277,6 +325,10 @@ transform: scale(1.1);
 .social-icons{
     margin-top: 30px;
 
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
 .social-icons a{
     text-decoration: none;
@@ -299,7 +351,7 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background:#f89d9d;
+    background:#262626;
     padding: 15px;
     margin: 15px 0;
     color: white;
@@ -322,7 +374,7 @@ form input,form textarea{
     width:100%;
     text-align: center;
     padding: 25px 0;
-    background: #010429;
+    background: #262626;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -405,6 +457,21 @@ nav ul .fas{
     font-size: 16px;
     margin-right: 20px;
 }
+
+/* Skills */
+
+#skill_container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+#skill_container div h2{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* Portfolio projects */
+
 .project-list{
     grid-template-columns: repeat(1,1fr);
 }
@@ -413,17 +480,25 @@ nav ul .fas{
 
     flex-basis: 100%;
 }
-
-.layer h3{
+.layer{
+    padding: 0px;
+}
+.layer h2{
     font-weight: 500;
     margin-bottom: 7px;
 }
 
 .layer p{
-    display: none;
+    /* display: none; */
     font-weight: 500;
     font-size: 14px;
 }
+
+
+.work{
+    grid-template-columns: repeat(1,1fr);   
+   
+   }
 
 }
 
@@ -491,6 +566,19 @@ nav ul .fas{
 
     flex-basis: 100%;
 }
+
+#skill_container{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.work{
+ grid-template-columns: repeat(1,1fr);   
+
+}
+.layer{
+    padding: 0px;
+}
+
 }
 #msg{
     color: #61b752;
