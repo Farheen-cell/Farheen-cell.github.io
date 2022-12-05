@@ -9,11 +9,11 @@
   
 
 document.getElementById("res1").addEventListener("click",()=>{
-    window.open("https://drive.google.com/file/d/10rOCMW-zp04idDhWGqmHBIGYQaGusKML/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/1nVhJp8sAz3VygvbEuqY-Kli8SYk254io/view?usp=sharing");
     })
     
     document.getElementById("res2").addEventListener("click",()=>{
-        window.open("https://drive.google.com/file/d/10rOCMW-zp04idDhWGqmHBIGYQaGusKML/view?usp=sharing");
+        window.open("https://drive.google.com/file/d/1nVhJp8sAz3VygvbEuqY-Kli8SYk254io/view?usp=sharing");
         })
     
     
