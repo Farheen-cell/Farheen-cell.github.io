@@ -36,8 +36,9 @@
       border-radius: 3px;
       text-align: center;
       margin: auto;
-      padding:1%;
+      padding:2%;
       margin-top: 20px;
+      margin-bottom: 20px;
   }
   .git{
     background-color: #020638;

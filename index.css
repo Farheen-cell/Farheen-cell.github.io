@@ -107,7 +107,7 @@ nav ul li a:hover::after{
 /* About */
 
 #about{
-padding:60px 0px;
+padding:15px 0px;
 color: #ababab;
 background-color: #240145;
 }
@@ -129,9 +129,11 @@ background-color: #240145;
 
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: white;
+    margin-bottom: 10px;
+    margin-top: 18px;
 }
 .about-col-2 p{
 line-height: 20px;
@@ -188,10 +190,13 @@ font-size: 20px;
 #Skills{
     width: 100%;
 background-color: #240145;
+
+
 }
 
 #skill_container{
    width: 100%;
+   
     display: grid;
     margin: auto;
     grid-template-columns: repeat(5,1fr);
@@ -203,7 +208,7 @@ background-color: #240145;
     /* border: 1px solid red; */
 }
 #skill_container div{
-    height: 100%;
+    height: 90%;
     /* width: 100%; */
     /* border: 1px solid pink; */
    /* padding: 10px; */
@@ -236,29 +241,31 @@ transform: scale(1.1);
 #exp{
     border-radius: 20px;
     width:100%;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 /* Portfolio-------- */
 
 
 #portfolio{
-    padding: 50px 0px;
+    padding: 10px 0px;
     background-color: #240145;
 
 }
 .project-list{
     width:100%;
+    
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 40px;
     margin-top: 50px;
+    
 
 }
 .work{
     display: grid;
     grid-template-columns: 65% 35%;
-    
+   
     border-radius: 10px;
     border: 2px solid #b54769;
     background-color: #240145;
