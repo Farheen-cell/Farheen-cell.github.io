@@ -35,7 +35,7 @@ nav{
 nav.sticky{
     position: fixed;
     top: 0px;
-    background-color: #240145;
+    background-color:  #020638;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: 0.6s;
     z-index: 1;
@@ -109,7 +109,7 @@ nav ul li a:hover::after{
 #about{
 padding:15px 0px;
 color: #ababab;
-background-color: #240145;
+background-color:  #020638;
 }
 .row{
     display: flex;
@@ -189,7 +189,7 @@ font-size: 20px;
 
 #Skills{
     width: 100%;
-background-color: #240145;
+background-color:  #020638;
 
 
 }
@@ -213,7 +213,7 @@ background-color: #240145;
     /* border: 1px solid pink; */
    /* padding: 10px; */
    text-align: center;
-   background-color: #240145;
+   background-color: #020638;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    border-radius: 10px;
    
@@ -249,7 +249,7 @@ transform: scale(1.1);
 
 #portfolio{
     padding: 10px 0px;
-    background-color: #240145;
+    background-color:  #020638;
 
 }
 .project-list{
@@ -268,7 +268,7 @@ transform: scale(1.1);
    
     border-radius: 10px;
     border: 2px solid #b54769;
-    background-color: #240145;
+    background-color:  #020638;
     padding: 20px;
   
 }
@@ -311,7 +311,7 @@ margin: 20px auto;
 
 
 #contact{
-    background-color: #240145;
+    background-color: #020638;
 }
 
 .contact-left{
@@ -381,7 +381,7 @@ form input,form textarea{
     width:100%;
     text-align: center;
     padding: 25px 0;
-    background: #240145;
+    background:  #020638;
     font-weight: 300;
     margin-top: 20px;
 }
